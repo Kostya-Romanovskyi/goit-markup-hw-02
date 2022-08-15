@@ -3,6 +3,9 @@
   --secondary-color: #757575;
   --active-color: #2196f3;
   --white-color: #ffffff;
+  --link-color-rgba: rgba(255, 255, 255, 0.6);
+  --bg-dark: #2f303a;
+  --bg-light: #f5f4fa;
 }
 body {
   color: var(--main-color);
@@ -40,7 +43,7 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02em;
 
-  color: var(--main-color, inherit);
+  color: var(--main-color);
 
   text-decoration: none;
 }
@@ -68,11 +71,12 @@ body {
 }
 .auth-link:hover,
 .auth-link:focus {
-  color: var(--active-color, #2196f3);
+  color: var(--active-color);
 }
 
 /* ГЕРОЙ */
 .hero {
+  background-color: var(--bg-dark);
 }
 .hero-title {
   font-weight: 900;
@@ -84,9 +88,6 @@ body {
   text-transform: uppercase;
 
   color: var(--white-color);
-  /* задній фон тільки для відображення тексту!!! */
-  background-color: rgb(182, 180, 180);
-  /* задній фон тільки для відображення тексту!!! */
 }
 .hero-button {
   font-family: inherit;
@@ -146,6 +147,9 @@ body {
 }
 
 /* НАША КОМАНДА */
+.bg-light {
+  background-color: var(--bg-light);
+}
 .team-list {
   list-style: none;
 }
@@ -170,6 +174,13 @@ body {
 /* FOOTER */
 
 .footer {
+  background-color: var(--bg-dark);
+}
+.color-white {
+  color: var(--white-color);
+}
+.color-rgba {
+  color: var(--link-color-rgba);
 }
 .footer-address {
   font-style: normal;
@@ -190,6 +201,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  background-color: var(--bg-light);
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -215,12 +228,24 @@ body {
   letter-spacing: 0.06em;
   text-decoration: none;
 
-  color: var(--main-color, inherit);
+  color: var(--main-color);
 }
 .projects-img {
 }
 .projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
 }
 .projects-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
 }
 /* END //PORTFOLIO.HTML */
